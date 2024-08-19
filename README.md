@@ -1,29 +1,35 @@
-# Bike-Renting-Insights
 
-### 1. **Project Overview**
+# Bike Sharing Data Analysis
+---
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Data Overview](#data-overview)
+3. [Objectives](#objectives)
+4. [SQL and DAX Queries](#sql-and-dax-queries)
+    - [SQL Queries](#sql-queries)
+    - [DAX Queries](#dax-queries)
+5. [Power BI Visualization](#power-bi-visualization)
+6. [Insights and Recommendations](#insights-and-recommendations)
+7. [Machine Learning Applications](#machine-learning-applications)
+8. [Conclusion](#conclusion)
+9. [Additional Resources](#additional-resources)
 
-#### Blurb:
+## Project Overview
 This project analyzes bike-sharing data across two years to identify key revenue drivers, seasonal trends, and customer demographics. The project includes visual dashboards and predictive modeling to enhance profitability.
 
-#### Introduction:
-In the competitive bike-sharing industry, understanding revenue trends, customer demographics, and profitability is critical. This project leverages data analytics and Power BI to explore key performance indicators (KPIs), seasonal sales patterns, and customer segments. By analyzing the dataset, we provide insights into revenue generation, customer behavior, and recommendations for enhancing profit margins.
-
-### 2. **Data Overview**
-
-#### Dataset Information:
+## Data Overview
 - **bike_share_yr_1.csv:** Contains information on bike rentals, including date, customer type, revenue, and other key metrics.
 - **cost_table.csv:** Provides cost information related to bike maintenance, operations, and other expenses.
 
-### 3. **Objectives**
-
+## Objectives
 - Analyze revenue trends across different periods (year, season, day).
 - Identify profitable customer segments and peak business hours.
 - Provide actionable insights for increasing profit margins.
 - Utilize predictive analytics to forecast future revenue and profit trends.
 
-### 4. **SQL and DAX Queries**
+## SQL and DAX Queries
 
-#### SQL Queries:
+### SQL Queries
 To demonstrate data extraction and processing, here are some examples:
 
 ```sql
@@ -64,7 +70,7 @@ GROUP BY DATEPART(QUARTER, Date)
 ORDER BY Total_Revenue DESC;
 ```
 
-#### DAX Queries:
+### DAX Queries
 Below are some DAX queries that could be used in Power BI to calculate key metrics:
 
 ```dax
@@ -81,9 +87,7 @@ RevenueBySeason = CALCULATE(SUM(BikeShareData[Revenue]), DATEPART(QUARTER, BikeS
 RidersByYear = SUMMARIZE(BikeShareData, BikeShareData[Year], "TotalRiders", SUM(BikeShareData[Riders]))
 ```
 
-### 5. **Power BI Visualization**
-
-#### Summary Dashboard:
+## Power BI Visualization
 The Power BI dashboard offers an in-depth look at:
 
 - **Total Revenue and Profit:** Analyzed by year, season, and customer type.
@@ -91,8 +95,9 @@ The Power BI dashboard offers an in-depth look at:
 - **Revenue by Season:** Visual representation of which seasons generate the most revenue.
 - **Rider Demographics:** Breakdown of casual vs. registered riders.
 
-### 6. **Insights and Recommendations**
+You can view the live Power BI dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiODZlMjMyZjgtYmFhMy00ZWI2LWFmNGQtYjFmZWUxMGFhNTA4IiwidCI6ImI1NWIwM2YzLTIyZmUtNDAyNi1hM2Y0LWQ2NTVjOThiNDAyMCJ9).
 
+## Insights and Recommendations
 Based on the visual analysis:
 
 - **Revenue Trends:** Year 2022 saw significant revenue growth, particularly in the summer months (season 3), which generated $3.2M in revenue.
@@ -101,7 +106,7 @@ Based on the visual analysis:
 - **Peak Business Hours:** Most profitable hours are between 16h - 18h, with Wednesday and Friday being the most profitable days.
 - **Actionable Insight:** Increase marketing efforts during peak seasons and times to maximize revenue. Consider targeted campaigns for casual riders to convert them into registered users.
 
-### 7. **Machine Learning Applications**
+## Machine Learning Applications
 
 #### Predictive Analytics:
 Given the data available, we can apply machine learning techniques such as:
@@ -110,13 +115,12 @@ Given the data available, we can apply machine learning techniques such as:
 - **Customer Segmentation:** Using clustering algorithms to identify distinct customer segments.
 - **Churn Prediction:** Identifying casual riders who are likely to churn and providing them with targeted incentives to retain them.
 
-### 8. **Conclusion**
-
+## Conclusion
 This project provides a comprehensive analysis of bike-sharing data, highlighting critical business insights and opportunities for enhancing profitability. By leveraging SQL, DAX, and Power BI, we’ve created a powerful tool for understanding and optimizing bike-sharing operations.
 
----
-
-### Additional Resources
+## Additional Resources
 - [Download the Dataset](#)
-- [View Power BI Dashboard](#)
+- [View Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODZlMjMyZjgtYmFhMy00ZWI2LWFmNGQtYjFmZWUxMGFhNTA4IiwidCI6ImI1NWIwM2YzLTIyZmUtNDAyNi1hM2Y0LWQ2NTVjOThiNDAyMCJ9)
 - [Project Presentation](#)
+
+---
