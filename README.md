@@ -121,6 +121,4 @@ This project provides a comprehensive analysis of bike-sharing data, highlightin
 ## Additional Resources
 - [Download the Dataset](#)
 - [View Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODZlMjMyZjgtYmFhMy00ZWI2LWFmNGQtYjFmZWUxMGFhNTA4IiwidCI6ImI1NWIwM2YzLTIyZmUtNDAyNi1hM2Y0LWQ2NTVjOThiNDAyMCJ9)
-- [Project Presentation](#)
-
 ---
