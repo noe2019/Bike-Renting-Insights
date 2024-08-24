@@ -12,7 +12,6 @@
 6. [Insights and Recommendations](#insights-and-recommendations)
 7. [Machine Learning Applications](#machine-learning-applications)
 8. [Conclusion](#conclusion)
-9. [Additional Resources](#additional-resources)
 
 ## Project Overview
 This project analyzes bike-sharing data across two years to identify key revenue drivers, seasonal trends, and customer demographics. The project includes visual dashboards and predictive modeling to enhance profitability.
@@ -118,7 +117,4 @@ Given the data available, we can apply machine learning techniques such as:
 ## Conclusion
 This project provides a comprehensive analysis of bike-sharing data, highlighting critical business insights and opportunities for enhancing profitability. By leveraging SQL, DAX, and Power BI, we’ve created a powerful tool for understanding and optimizing bike-sharing operations.
 
-## Additional Resources
-- [Download the Dataset](#)
-- [View Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODZlMjMyZjgtYmFhMy00ZWI2LWFmNGQtYjFmZWUxMGFhNTA4IiwidCI6ImI1NWIwM2YzLTIyZmUtNDAyNi1hM2Y0LWQ2NTVjOThiNDAyMCJ9)
 ---
